@@ -10,33 +10,155 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ContatoRouteImport } from './routes/contato'
+import { Route as ConteudosRouteImport } from './routes/conteudos'
+import { Route as DireitoCivilRouteImport } from './routes/direito-civil'
+import { Route as DireitoDoConsumidorRouteImport } from './routes/direito-do-consumidor'
+import { Route as DireitoDoTrabalhoRouteImport } from './routes/direito-do-trabalho'
+import { Route as DireitoPrevidenciarioRouteImport } from './routes/direito-previdenciario'
+import { Route as PoliticaDePrivacidadeRouteImport } from './routes/politica-de-privacidade'
+import { Route as SobreRouteImport } from './routes/sobre'
+import { Route as TrabalhadoresRodoviasFrigorificosRouteImport } from './routes/trabalhadores-rodovias-frigorificos'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ContatoRoute = ContatoRouteImport.update({
+  id: '/contato',
+  path: '/contato',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ConteudosRoute = ConteudosRouteImport.update({
+  id: '/conteudos',
+  path: '/conteudos',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DireitoCivilRoute = DireitoCivilRouteImport.update({
+  id: '/direito-civil',
+  path: '/direito-civil',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DireitoDoConsumidorRoute = DireitoDoConsumidorRouteImport.update({
+  id: '/direito-do-consumidor',
+  path: '/direito-do-consumidor',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DireitoDoTrabalhoRoute = DireitoDoTrabalhoRouteImport.update({
+  id: '/direito-do-trabalho',
+  path: '/direito-do-trabalho',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DireitoPrevidenciarioRoute = DireitoPrevidenciarioRouteImport.update({
+  id: '/direito-previdenciario',
+  path: '/direito-previdenciario',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PoliticaDePrivacidadeRoute = PoliticaDePrivacidadeRouteImport.update({
+  id: '/politica-de-privacidade',
+  path: '/politica-de-privacidade',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SobreRoute = SobreRouteImport.update({
+  id: '/sobre',
+  path: '/sobre',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TrabalhadoresRodoviasFrigorificosRoute =
+  TrabalhadoresRodoviasFrigorificosRouteImport.update({
+    id: '/trabalhadores-rodovias-frigorificos',
+    path: '/trabalhadores-rodovias-frigorificos',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/contato': typeof ContatoRoute
+  '/conteudos': typeof ConteudosRoute
+  '/direito-civil': typeof DireitoCivilRoute
+  '/direito-do-consumidor': typeof DireitoDoConsumidorRoute
+  '/direito-do-trabalho': typeof DireitoDoTrabalhoRoute
+  '/direito-previdenciario': typeof DireitoPrevidenciarioRoute
+  '/politica-de-privacidade': typeof PoliticaDePrivacidadeRoute
+  '/sobre': typeof SobreRoute
+  '/trabalhadores-rodovias-frigorificos': typeof TrabalhadoresRodoviasFrigorificosRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/contato': typeof ContatoRoute
+  '/conteudos': typeof ConteudosRoute
+  '/direito-civil': typeof DireitoCivilRoute
+  '/direito-do-consumidor': typeof DireitoDoConsumidorRoute
+  '/direito-do-trabalho': typeof DireitoDoTrabalhoRoute
+  '/direito-previdenciario': typeof DireitoPrevidenciarioRoute
+  '/politica-de-privacidade': typeof PoliticaDePrivacidadeRoute
+  '/sobre': typeof SobreRoute
+  '/trabalhadores-rodovias-frigorificos': typeof TrabalhadoresRodoviasFrigorificosRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/contato': typeof ContatoRoute
+  '/conteudos': typeof ConteudosRoute
+  '/direito-civil': typeof DireitoCivilRoute
+  '/direito-do-consumidor': typeof DireitoDoConsumidorRoute
+  '/direito-do-trabalho': typeof DireitoDoTrabalhoRoute
+  '/direito-previdenciario': typeof DireitoPrevidenciarioRoute
+  '/politica-de-privacidade': typeof PoliticaDePrivacidadeRoute
+  '/sobre': typeof SobreRoute
+  '/trabalhadores-rodovias-frigorificos': typeof TrabalhadoresRodoviasFrigorificosRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/contato'
+    | '/conteudos'
+    | '/direito-civil'
+    | '/direito-do-consumidor'
+    | '/direito-do-trabalho'
+    | '/direito-previdenciario'
+    | '/politica-de-privacidade'
+    | '/sobre'
+    | '/trabalhadores-rodovias-frigorificos'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/contato'
+    | '/conteudos'
+    | '/direito-civil'
+    | '/direito-do-consumidor'
+    | '/direito-do-trabalho'
+    | '/direito-previdenciario'
+    | '/politica-de-privacidade'
+    | '/sobre'
+    | '/trabalhadores-rodovias-frigorificos'
+  id:
+    | '__root__'
+    | '/'
+    | '/contato'
+    | '/conteudos'
+    | '/direito-civil'
+    | '/direito-do-consumidor'
+    | '/direito-do-trabalho'
+    | '/direito-previdenciario'
+    | '/politica-de-privacidade'
+    | '/sobre'
+    | '/trabalhadores-rodovias-frigorificos'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ContatoRoute: typeof ContatoRoute
+  ConteudosRoute: typeof ConteudosRoute
+  DireitoCivilRoute: typeof DireitoCivilRoute
+  DireitoDoConsumidorRoute: typeof DireitoDoConsumidorRoute
+  DireitoDoTrabalhoRoute: typeof DireitoDoTrabalhoRoute
+  DireitoPrevidenciarioRoute: typeof DireitoPrevidenciarioRoute
+  PoliticaDePrivacidadeRoute: typeof PoliticaDePrivacidadeRoute
+  SobreRoute: typeof SobreRoute
+  TrabalhadoresRodoviasFrigorificosRoute: typeof TrabalhadoresRodoviasFrigorificosRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +170,84 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/contato': {
+      id: '/contato'
+      path: '/contato'
+      fullPath: '/contato'
+      preLoaderRoute: typeof ContatoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/conteudos': {
+      id: '/conteudos'
+      path: '/conteudos'
+      fullPath: '/conteudos'
+      preLoaderRoute: typeof ConteudosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/direito-civil': {
+      id: '/direito-civil'
+      path: '/direito-civil'
+      fullPath: '/direito-civil'
+      preLoaderRoute: typeof DireitoCivilRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/direito-do-consumidor': {
+      id: '/direito-do-consumidor'
+      path: '/direito-do-consumidor'
+      fullPath: '/direito-do-consumidor'
+      preLoaderRoute: typeof DireitoDoConsumidorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/direito-do-trabalho': {
+      id: '/direito-do-trabalho'
+      path: '/direito-do-trabalho'
+      fullPath: '/direito-do-trabalho'
+      preLoaderRoute: typeof DireitoDoTrabalhoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/direito-previdenciario': {
+      id: '/direito-previdenciario'
+      path: '/direito-previdenciario'
+      fullPath: '/direito-previdenciario'
+      preLoaderRoute: typeof DireitoPrevidenciarioRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/politica-de-privacidade': {
+      id: '/politica-de-privacidade'
+      path: '/politica-de-privacidade'
+      fullPath: '/politica-de-privacidade'
+      preLoaderRoute: typeof PoliticaDePrivacidadeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sobre': {
+      id: '/sobre'
+      path: '/sobre'
+      fullPath: '/sobre'
+      preLoaderRoute: typeof SobreRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/trabalhadores-rodovias-frigorificos': {
+      id: '/trabalhadores-rodovias-frigorificos'
+      path: '/trabalhadores-rodovias-frigorificos'
+      fullPath: '/trabalhadores-rodovias-frigorificos'
+      preLoaderRoute: typeof TrabalhadoresRodoviasFrigorificosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ContatoRoute: ContatoRoute,
+  ConteudosRoute: ConteudosRoute,
+  DireitoCivilRoute: DireitoCivilRoute,
+  DireitoDoConsumidorRoute: DireitoDoConsumidorRoute,
+  DireitoDoTrabalhoRoute: DireitoDoTrabalhoRoute,
+  DireitoPrevidenciarioRoute: DireitoPrevidenciarioRoute,
+  PoliticaDePrivacidadeRoute: PoliticaDePrivacidadeRoute,
+  SobreRoute: SobreRoute,
+  TrabalhadoresRodoviasFrigorificosRoute:
+    TrabalhadoresRodoviasFrigorificosRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
