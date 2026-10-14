@@ -2236,3 +2236,146 @@ p {
     margin-bottom: 12px;
   }
 }
+
+
+/* Final legibility update – retain the approved layout and colors. */
+body { font-size: 17px; }
+.manifesto p,
+.about-copy > p,
+.section-heading > p,
+.workers-grid > div > p,
+.sector-list p,
+.timeline p,
+.pillars p,
+.content-preview p,
+.body-copy,
+.faq-answer,
+.contact-band p,
+.page-intro p,
+.process-grid p,
+.sector-detail-grid p,
+.guide-article p,
+.contact-details p,
+.contact-details a,
+.privacy-copy > p,
+.area-card p {
+  font-size: 17px;
+  line-height: 1.78;
+}
+.hero-content > p { font-size: 17px; }
+.eyebrow, .hero-kicker, .small-label, .guide-category, .timeline-year {
+  font-size: 12.5px;
+}
+.hero-registration, .hero-registration > span,
+.hero-bottom, .trust-strip span, .about-credentials,
+.area-card-top > span, .pillars > div > span {
+  font-size: 12px;
+}
+.text-link, .hero-about, .nav-dropdown-panel a,
+.desktop-nav > a, .nav-dropdown > a,
+.area-card .text-link {
+  font-size: 14px;
+}
+.contact-button, .header-contact {
+  font-size: 14px;
+}
+.faq-question, .faq-answer, .topic-list > div {
+  font-size: 16.5px;
+}
+.legal-note, .footer-grid p, .registration,
+.footer-grid h3, .footer-grid > div > a:not(.brand),
+.footer-bottom {
+  font-size: 14px;
+}
+.area-card p { min-height: 0; }
+.area-card .text-link { margin-top: auto; }
+.floating-whatsapp {
+  position: fixed;
+  right: max(22px, env(safe-area-inset-right));
+  bottom: max(24px, env(safe-area-inset-bottom));
+  z-index: 75;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-width: 58px;
+  min-height: 58px;
+  padding: 0 18px 0 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 999px;
+  color: #fff;
+  background: #168d4b;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.25);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+.floating-whatsapp:hover {
+  background: #137d42;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+}
+.floating-whatsapp:focus-visible {
+  outline: 3px solid var(--champagne);
+  outline-offset: 4px;
+}
+.floating-whatsapp-icon {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 32px;
+  flex-shrink: 0;
+}
+.floating-whatsapp-icon svg:last-child {
+  position: absolute;
+  left: 9px;
+  top: 8px;
+  transform: rotate(-18deg);
+}
+.floating-whatsapp-label { white-space: nowrap; }
+.video-control { right: 28px; bottom: 112px; }
+@media (max-width: 900px) {
+  .mobile-nav > a:not(.contact-button) { font-size: 16px; }
+}
+@media (max-width: 640px) {
+  body { font-size: 16px; }
+  .manifesto p, .about-copy > p, .section-heading > p,
+  .workers-grid > div > p, .sector-list p, .timeline p,
+  .pillars p, .content-preview p, .body-copy, .faq-answer,
+  .contact-band p, .page-intro p, .process-grid p,
+  .sector-detail-grid p, .guide-article p, .contact-details p,
+  .contact-details a, .privacy-copy > p, .area-card p {
+    font-size: 16px;
+    line-height: 1.72;
+  }
+  .hero-content > p { font-size: 16px; }
+  .eyebrow, .hero-kicker { font-size: 12px; }
+  .hero-registration, .hero-registration > span,
+  .hero-bottom, .trust-strip span, .timeline-year,
+  .small-label { font-size: 11.5px; }
+  .text-link, .hero-about, .area-card .text-link,
+  .office-gallery-footer .text-link { font-size: 14px; }
+  .contact-button, .hero-actions > .contact-button { font-size: 14px; }
+  .faq-question, .faq-answer, .topic-list > div { font-size: 16px; }
+  .guide-article p, .legal-note,
+  .footer-grid p, .footer-grid > div > a:not(.brand),
+  .footer-grid h3, .footer-bottom, .registration {
+    font-size: 13.5px;
+  }
+  .floating-whatsapp {
+    right: max(15px, env(safe-area-inset-right));
+    bottom: max(18px, env(safe-area-inset-bottom));
+    width: 58px;
+    height: 58px;
+    min-width: 58px;
+    min-height: 58px;
+    padding: 0;
+  }
+  .floating-whatsapp-label { display: none; }
+  .video-control { left: 20px; right: auto; bottom: 65px; }
+}
