@@ -193,7 +193,7 @@ export function HomePage() {
           </div>
         </div>
       </section>
-      <section className="section editorial-image-section"><div className="container about-grid"><OfficeImage file="IMG_6428.webp" label="Tharcis Leite em seu ambiente de trabalho" className="portrait-photo" /><div className="about-copy"><Eyebrow>ATENÇÃO EM CADA DETALHE</Eyebrow><h2>Dedicação que se revela <em>em cada atendimento.</em></h2><p>Escuta cuidadosa, estudo técnico e transparência para compreender as particularidades de cada situação.</p><Link to="/sobre" className="text-link">Conheça o advogado <ArrowUpRight size={17}/></Link></div></div></section>
+      <section className="section editorial-image-section"><div className="container about-grid"><OfficeImage file="IMG_6428.webp" label="Tharcis Leite em seu ambiente de trabalho" className="landscape-photo" /><div className="about-copy"><Eyebrow>ATENÇÃO EM CADA DETALHE</Eyebrow><h2>Dedicação que se revela <em>em cada atendimento.</em></h2><p>Escuta cuidadosa, estudo técnico e transparência para compreender as particularidades de cada situação.</p><Link to="/sobre" className="text-link">Conheça o advogado <ArrowUpRight size={17}/></Link></div></div></section>
       <section className="section timeline-section">
         <div className="container">
           <Eyebrow>UMA TRAJETÓRIA DE COMPROMISSO</Eyebrow>
