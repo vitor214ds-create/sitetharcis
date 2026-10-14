@@ -1749,3 +1749,490 @@ p {
     }
   }
 }
+
+
+/* Readability and photo proportion refinement.
+   Keeps the existing Tharcis Leite art direction and page composition. */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+body {
+  font-size: 16px;
+  line-height: 1.7;
+}
+p {
+  line-height: 1.78;
+}
+.manifesto p,
+.about-copy > p,
+.section-heading > p,
+.workers-grid > div > p,
+.sector-list p,
+.timeline p,
+.pillars p,
+.content-preview p,
+.body-copy,
+.faq-answer,
+.contact-band p,
+.page-intro p,
+.process-grid p,
+.sector-detail-grid p,
+.guide-article p,
+.contact-details p,
+.contact-details a,
+.privacy-copy > p {
+  font-size: 15px;
+  line-height: 1.78;
+}
+.area-card p {
+  font-size: 14.5px;
+  line-height: 1.72;
+  min-height: 0;
+  margin-bottom: 24px;
+}
+.area-card {
+  display: flex;
+  flex-direction: column;
+}
+.area-card h3 {
+  min-height: 0;
+}
+.area-card .text-link {
+  margin-top: auto;
+  font-size: 12.5px;
+  gap: 12px;
+}
+.eyebrow,
+.hero-kicker,
+.small-label,
+.guide-category,
+.timeline-year {
+  font-size: 11.5px;
+  letter-spacing: 1.4px;
+}
+.hero-content > p {
+  font-size: 15px;
+  line-height: 1.7;
+}
+.hero-registration,
+.hero-registration > span,
+.hero-bottom,
+.trust-strip span,
+.pillars > div > span,
+.area-card-top > span,
+.about-credentials,
+.photo-note span {
+  font-size: 11.5px;
+  line-height: 1.65;
+}
+.text-link,
+.hero-about,
+.nav-dropdown-panel a,
+.desktop-nav > a,
+.nav-dropdown > a {
+  font-size: 13px;
+}
+.contact-button,
+.header-contact {
+  font-size: 12.5px;
+  min-height: 44px;
+}
+.faq-question,
+.faq-answer {
+  font-size: 15px;
+}
+.topic-list > div {
+  font-size: 15px;
+  line-height: 1.6;
+}
+.process-grid > div > span,
+.legal-note {
+  font-size: 12.5px;
+  line-height: 1.7;
+}
+.registration,
+.footer-grid h3,
+.footer-grid p,
+.footer-grid > div > a:not(.brand),
+.footer-bottom {
+  font-size: 12.5px;
+  line-height: 1.65;
+}
+.brand-name > span {
+  font-size: 10px;
+  letter-spacing: 3px;
+}
+.contact-details a,
+.contact-details .email-link {
+  overflow-wrap: anywhere;
+}
+.office-image {
+  min-width: 0;
+}
+.office-image > img {
+  display: block;
+  object-fit: cover;
+  object-position: center 35%;
+}
+.portrait-photo {
+  height: auto;
+  max-height: none;
+  aspect-ratio: 2 / 3;
+}
+.landscape-photo {
+  height: auto;
+  min-height: 0;
+  aspect-ratio: 3 / 2;
+}
+.office-gallery {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 16px;
+}
+.office-gallery > .office-image {
+  min-width: 0;
+  min-height: 0;
+  height: clamp(255px, 28vw, 380px);
+}
+.office-gallery > .office-image:nth-child(odd) {
+  grid-column: span 7;
+}
+.office-gallery > .office-image:nth-child(even) {
+  grid-column: span 5;
+}
+.office-gallery > .office-image:first-child > img {
+  object-position: center 52%;
+}
+.office-gallery > .office-image:nth-child(2) > img {
+  object-position: 43% 40%;
+}
+.office-gallery > .office-image:nth-child(3) > img {
+  object-position: 43% 35%;
+}
+.office-gallery > .office-image:nth-child(4) > img {
+  object-position: center 24%;
+}
+.facade-photo {
+  height: clamp(340px, 38vw, 520px);
+}
+.facade-photo > img {
+  object-position: center 54%;
+}
+.hero-video {
+  object-position: center;
+}
+@media (min-width: 641px) and (max-width: 1050px) {
+  .desktop-nav,
+  .header-contact {
+    display: none;
+  }
+  .menu-toggle {
+    display: inline-flex;
+    width: 44px;
+    height: 44px;
+  }
+  .mobile-nav {
+    max-height: calc(100dvh - 84px);
+  }
+}
+@media (max-width: 900px) {
+  .office-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .office-gallery > .office-image,
+  .office-gallery > .office-image:first-child {
+    grid-column: auto;
+    height: clamp(250px, 40vw, 360px);
+    min-height: 0;
+  }
+  .office-gallery > .office-image:nth-child(4) {
+    background: var(--secondary);
+  }
+  .office-gallery > .office-image:nth-child(4) > img {
+    object-fit: contain;
+  }
+  .mobile-nav {
+    gap: 3px;
+    padding: 14px 26px 26px;
+    overscroll-behavior: contain;
+  }
+  .mobile-nav > a:not(.contact-button) {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    line-height: 1.4;
+    padding: 8px 0;
+  }
+  .mobile-nav .contact-button {
+    margin-top: 14px;
+  }
+}
+@media (max-width: 640px) {
+  .container {
+    width: calc(100% - 40px);
+  }
+  .section {
+    padding-block: 65px;
+  }
+  h2 {
+    font-size: clamp(34px, 9vw, 41px);
+    line-height: 1.12;
+  }
+  h3 {
+    font-size: 27px;
+  }
+  .home-hero {
+    height: 100svh;
+    min-height: 660px;
+    max-height: none;
+  }
+  .hero-content {
+    padding-top: clamp(100px, 17vh, 135px);
+    padding-bottom: 94px;
+  }
+  .hero-content h1 {
+    font-size: clamp(48px, 12vw, 61px);
+    line-height: 1.05;
+  }
+  .hero-content h1 > span {
+    font-size: clamp(29px, 8vw, 36px);
+    line-height: 1.12;
+    margin-top: 13px;
+  }
+  .hero-content > p {
+    font-size: 15px;
+    max-width: 355px;
+    line-height: 1.65;
+    margin-top: 18px;
+  }
+  .hero-kicker,
+  .eyebrow {
+    font-size: 11px;
+    letter-spacing: 1.1px;
+  }
+  .hero-registration,
+  .hero-registration > span,
+  .hero-bottom {
+    font-size: 10.5px;
+    letter-spacing: 0.7px;
+  }
+  .hero-registration {
+    margin-top: 26px;
+  }
+  .hero-actions {
+    gap: 14px;
+    margin-top: 24px;
+  }
+  .hero-actions > .contact-button {
+    font-size: 13px;
+    min-height: 48px;
+  }
+  .hero-about {
+    font-size: 13px;
+  }
+  .video-control {
+    right: 20px;
+    bottom: 64px;
+    width: 44px;
+    height: 44px;
+  }
+  .hero-bottom {
+    bottom: 17px;
+  }
+  .trust-strip > .container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+  .trust-strip span {
+    font-size: 11px;
+  }
+  .manifesto p,
+  .about-copy > p,
+  .section-heading > p,
+  .workers-grid > div > p,
+  .sector-list p,
+  .timeline p,
+  .pillars p,
+  .content-preview p,
+  .body-copy,
+  .faq-answer,
+  .contact-band p,
+  .page-intro p,
+  .process-grid p,
+  .sector-detail-grid p,
+  .guide-article p,
+  .contact-details p,
+  .contact-details a,
+  .privacy-copy > p {
+    font-size: 15px;
+    line-height: 1.75;
+  }
+  .portrait-photo,
+  .landscape-photo {
+    max-height: none;
+    min-height: 0;
+  }
+  .portrait-photo {
+    aspect-ratio: 2 / 3;
+  }
+  .landscape-photo {
+    aspect-ratio: 3 / 2;
+  }
+  .about-grid,
+  .workers-grid,
+  .faq-layout,
+  .area-detail-grid,
+  .contact-page-grid,
+  .content-preview-inner {
+    gap: 34px;
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .section-heading > p {
+    margin-top: 17px;
+  }
+  .areas-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+  }
+  .area-card {
+    padding: 24px;
+  }
+  .area-card h3 {
+    font-size: 29px;
+    min-height: 0;
+  }
+  .area-card p {
+    min-height: 0;
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+  .area-card .text-link {
+    font-size: 13px;
+    margin-top: 0;
+  }
+  .sector-list p,
+  .timeline p,
+  .pillars p,
+  .content-preview p {
+    font-size: 15px;
+  }
+  .timeline-year,
+  .small-label {
+    font-size: 11.5px;
+  }
+  .pillars {
+    gap: 23px 16px;
+  }
+  .pillars > div {
+    padding-right: 10px;
+  }
+  .office-gallery {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 17px;
+  }
+  .office-gallery > .office-image,
+  .office-gallery > .office-image:first-child {
+    grid-column: auto;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+  }
+  .office-gallery > .office-image:nth-child(1) {
+    aspect-ratio: 4 / 3;
+  }
+  .office-gallery > .office-image:nth-child(2),
+  .office-gallery > .office-image:nth-child(3) {
+    aspect-ratio: 3 / 2;
+  }
+  .office-gallery > .office-image:nth-child(4) {
+    aspect-ratio: 2 / 3;
+  }
+  .office-gallery > .office-image:nth-child(4) > img {
+    object-fit: cover;
+    object-position: center 28%;
+  }
+  .office-gallery-footer {
+    flex-direction: column;
+    gap: 13px;
+    align-items: flex-start;
+  }
+  .office-gallery-footer > span {
+    max-width: none;
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+  .office-gallery-footer .text-link {
+    font-size: 13px;
+  }
+  .facade-photo {
+    height: auto;
+    max-height: none;
+    aspect-ratio: 4 / 3;
+  }
+  .faq-question {
+    font-size: 15px;
+    line-height: 1.5;
+    padding-block: 20px;
+  }
+  .faq-answer,
+  .topic-list > div {
+    font-size: 15px;
+  }
+  .page-intro h1 {
+    font-size: clamp(39px, 10vw, 48px);
+    overflow-wrap: break-word;
+  }
+  .page-intro p {
+    margin-top: 19px;
+  }
+  .guide-article p,
+  .legal-note {
+    font-size: 14px;
+  }
+  .contact-band h2 {
+    font-size: clamp(36px, 9vw, 44px);
+  }
+  .footer-grid p,
+  .footer-grid > div > a:not(.brand),
+  .footer-grid h3,
+  .footer-bottom,
+  .registration {
+    font-size: 12.5px;
+  }
+  .footer-bottom {
+    line-height: 1.7;
+  }
+  .mobile-nav {
+    max-height: calc(100dvh - 74px);
+    padding-inline: 22px;
+  }
+}
+@media (max-width: 430px) {
+  .pillars {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+  }
+  .pillars > div,
+  .pillars > div:first-child,
+  .pillars > div:nth-child(3) {
+    border-left: 0;
+    border-bottom: 1px solid var(--border);
+    padding: 20px 0;
+  }
+  .pillars > div:last-child {
+    border-bottom: 0;
+  }
+  .footer-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+  .footer-grid > div:first-child,
+  .footer-grid > div:last-child {
+    grid-column: auto;
+  }
+  .footer-grid h3 {
+    margin-bottom: 12px;
+  }
+}
