@@ -193,6 +193,7 @@ export function HomePage() {
           </div>
         </div>
       </section>
+      <section className="section editorial-image-section"><div className="container about-grid"><OfficeImage file="IMG_6428.webp" label="Tharcis Leite em seu ambiente de trabalho" className="portrait-photo" /><div className="about-copy"><Eyebrow>ATENÇÃO EM CADA DETALHE</Eyebrow><h2>Dedicação que se revela <em>em cada atendimento.</em></h2><p>Escuta cuidadosa, estudo técnico e transparência para compreender as particularidades de cada situação.</p><Link to="/sobre" className="text-link">Conheça o advogado <ArrowUpRight size={17}/></Link></div></div></section>
       <section className="section timeline-section">
         <div className="container">
           <Eyebrow>UMA TRAJETÓRIA DE COMPROMISSO</Eyebrow>
@@ -242,9 +243,10 @@ export function HomePage() {
             </p>
           </div>
           <div className="office-gallery">
-            <OfficeImage file="IMG_6455.webp" label="Escritório · espaço de atendimento" />
-            <OfficeImage file="IMG_6520.webp" label="Escritório · detalhes" />
-            <OfficeImage file="IMG_6431.webp" label="Escritório · ambiente interno" />
+            <OfficeImage file="fachada.webp" label="Fachada do escritório Tharcis Leite Advocacia" />
+            <OfficeImage file="IMG_6455.webp" label="Tharcis Leite em atendimento no escritório" />
+            <OfficeImage file="IMG_6496.webp" label="Tharcis Leite com material de estudo jurídico" />
+            <OfficeImage file="IMG_6431.webp" label="Tharcis Leite na recepção do escritório" />
           </div>
           <div className="office-gallery-footer">
             <span>PROXIMIDADE QUE COMEÇA NO ACOLHIMENTO.</span>
