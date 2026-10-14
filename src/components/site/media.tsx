@@ -55,7 +55,7 @@ export function HeroMedia() {
   }, [available]);
   return (
     <>
-      <div className="hero-art" aria-hidden="true">
+      <div className="hero-art" aria-hidden="true" style={{backgroundImage: "linear-gradient(90deg, rgba(20,35,43,.86), rgba(20,35,43,.52)), url(/media/hero-poster.webp)", backgroundSize: "cover", backgroundPosition: "center"}}>
         <div className="architectural-lines" />
         <div className="hero-monogram">
           TL<span>.</span>
@@ -72,6 +72,7 @@ export function HeroMedia() {
             loop
             playsInline
             preload="metadata"
+            poster="/media/hero-poster.webp"
             onError={() => setAvailable(false)}
             aria-hidden="true"
           >
