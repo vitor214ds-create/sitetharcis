@@ -2383,3 +2383,8 @@ body { font-size: 17px; }
 /* TZ identity asset: maintain header/footer proportions */
 .brand-symbol-logo { display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
 .brand-symbol-logo img { display: block; width: 100%; height: 100%; object-fit: contain; }
+
+/* Header and footer TZ mark — visible with the existing brand design */
+.brand-symbol-logo { width: 59px; height: 59px; border-right: 0; padding: 0; }
+.brand-symbol-logo img { width: 100%; height: 100%; display: block; object-fit: contain; }
+@media (max-width: 640px) { .brand-symbol-logo { width: 48px; height: 48px; border: 0; padding: 0; } }
