@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="TZ Advocacia">
+<defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#f0d6a5"/><stop offset=".48" stop-color="#b6a181"/><stop offset="1" stop-color="#e0c394"/></linearGradient><linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#213743"/><stop offset="1" stop-color="#11232c"/></linearGradient></defs>
+<rect x="4" y="4" width="120" height="120" rx="17" fill="url(#b)" stroke="url(#g)" stroke-width="3"/>
+<path d="M24 31H104L94 45H68L43 88L32 77L51 45H24C22 39 22 35 24 31Z" fill="url(#g)"/>
+<path d="M81 48L94 61L75 92H104L95 106H48L81 48Z" fill="url(#g)"/>
+</svg>
