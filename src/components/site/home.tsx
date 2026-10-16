@@ -22,7 +22,7 @@ export function HomePage() {
             ADVOCACIA COM PROPÓSITO
           </div>
           <h1>
-            Tharcis Leite
+            THARCIS LEITE
             <span>
               Direito com técnica.
               <br />
