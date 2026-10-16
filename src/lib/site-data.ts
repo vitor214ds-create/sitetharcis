@@ -6,8 +6,8 @@ export const office = {
   phone: "(18) 99193-8287",
   email: "tharcisleite@adv.oabsp.org.br",
   instagram: "https://www.instagram.com/tharcisleiteadvocacia/",
-  address: "Rua José Passador, 565 · Vila Estrela",
-  city: "Estrela do Norte/SP · CEP 19230-000",
+  address: "Nova Estrela",
+  city: "",
 };
 export const areas = [
   {
