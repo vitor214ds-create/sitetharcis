@@ -3,7 +3,7 @@ import { office, pagePaths } from "@/lib/site-data";
 import { pageHead } from "@/lib/site-seo";
 describe("Official office details", () => {
   it("uses the official WhatsApp destination", () => {
-    expect(office.whatsapp).toBe("https://wa.me/5518996185053");
+    expect(office.whatsapp).toBe("https://wa.me/5518991938287");
   });
   it("uses the official email destination", () => {
     expect(office.email).toBe("tharcisleite@adv.oabsp.org.br");
@@ -24,6 +24,9 @@ describe("Official office details", () => {
       "/direito-civil",
       "/direito-do-consumidor",
       "/trabalhadores-rodovias-frigorificos",
+      "/direitos-trabalhadores-frigorificos",
+      "/direitos-trabalhadores-rodovias",
+      "/demandas-trabalhistas",
       "/conteudos",
       "/contato",
       "/politica-de-privacidade",
@@ -32,7 +35,7 @@ describe("Official office details", () => {
   it("uses self-referencing canonical URLs", () => {
     for (const path of pagePaths)
       expect(pageHead("Title", "Description", path).links[0]?.href).toBe(
-        `https://sitetharcis.lovable.app${path}`,
+        `https://tharcisleiteadvocacia.com.br${path}`,
       );
   });
 });
