@@ -51,7 +51,7 @@ export function HomePage() {
         </div>
         <div className="container hero-bottom">
           <a href="#atuacao-trabalhista" className="scroll-link"><ArrowDown size={15}/> CONHEÇA A ATUAÇÃO</a>
-          <span>SEDE EM ESTRELA DO NORTE/SP</span>
+          <span>SEDE EM NOVA ESTRELA</span>
         </div>
       </section>
 
@@ -118,7 +118,7 @@ export function HomePage() {
         <div className="container">
           <div className="section-heading">
             <div><Eyebrow light>ATENDIMENTO À DISTÂNCIA</Eyebrow><h2>Atendimento jurídico on-line para trabalhadores <em>de todo o Brasil.</em></h2></div>
-            <p>Com sede física em Estrela do Norte/SP, o escritório disponibiliza canais remotos para o contato inicial e a orientação jurídica, conforme as necessidades de cada caso.</p>
+            <p>Com sede física em Nova Estrela, o escritório disponibiliza canais remotos para o contato inicial e a orientação jurídica, conforme as necessidades de cada caso.</p>
           </div>
           <div className="national-steps">
             <div><MessageCircle size={28}/><span>01</span><h3>Primeiro contato</h3><p>Entre em contato pelo WhatsApp para apresentar, de forma inicial, sua dúvida trabalhista.</p></div>
@@ -145,13 +145,13 @@ export function HomePage() {
         <div className="container">
           <div className="section-heading">
             <div><Eyebrow>NOSSO ESCRITÓRIO</Eyebrow><h2>Uma sede real.<br/><em>Atendimento que ultrapassa fronteiras.</em></h2></div>
-            <p>Rua José Passador, 565 · Vila Estrela<br/>Estrela do Norte, São Paulo</p>
+            <p>Nova Estrela</p>
           </div>
           <div className="office-gallery">
             <OfficeImage file="fachada.webp" label="Fachada do escritório Tharcis Leite Advocacia"/>
             <OfficeImage file="IMG_6428.webp" label="Tharcis Leite em seu ambiente de trabalho"/>
           </div>
-          <div className="office-gallery-footer"><span>ESTRELA DO NORTE/SP • ATENDIMENTO ON-LINE</span><Link to="/contato" className="text-link">Localização e canais de contato <ArrowUpRight size={17}/></Link></div>
+          <div className="office-gallery-footer"><span>ATENDIMENTO PRESENCIAL E ON LINE</span><Link to="/contato" className="text-link">Localização e canais de contato <ArrowUpRight size={17}/></Link></div>
         </div>
       </section>
       <section className="section pillars-section"><div className="container"><div className="section-heading"><div><Eyebrow>COMPROMISSO PROFISSIONAL</Eyebrow><h2>Técnica, ética e <em>atenção individual.</em></h2></div><p>Uma advocacia orientada por informação clara, respeito e análise cuidadosa.</p></div><Pillars/></div></section>
