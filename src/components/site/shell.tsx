@@ -48,6 +48,9 @@ export function SiteHeader() {
               Áreas de atuação <ChevronDown size={12} />
             </Link>
             <div className="nav-dropdown-panel">
+              <Link to="/direitos-trabalhadores-frigorificos">Direitos em frigoríficos<ArrowUpRight size={14}/></Link>
+              <Link to="/direitos-trabalhadores-rodovias">Rodovias e construção<ArrowUpRight size={14}/></Link>
+              <Link to="/demandas-trabalhistas">Outras demandas trabalhistas<ArrowUpRight size={14}/></Link>
               {areas.map((a) => (
                 <Link key={a.slug} to={a.slug}>
                   {a.title}
@@ -89,7 +92,12 @@ export function SiteHeader() {
               {a.title}
             </Link>
           ))}
-          <Link to="/trabalhadores-rodovias-frigorificos">Rodovias e frigoríficos</Link>
+          <Link to="/direitos-trabalhadores-frigorificos">Frigoríficos</Link>
+          <Link to="/direitos-trabalhadores-rodovias">Rodovias e construção</Link>
+          <Link to="/demandas-trabalhistas">Demandas trabalhistas</Link>
+          <Link to="/direitos-trabalhadores-frigorificos">Direitos em frigoríficos</Link>
+          <Link to="/direitos-trabalhadores-rodovias">Rodovias e construção pesada</Link>
+          <Link to="/demandas-trabalhistas">Demandas trabalhistas</Link>
           <Link to="/conteudos">Conteúdos</Link>
           <Link to="/contato">Contato</Link>
           <WhatsAppLink />
