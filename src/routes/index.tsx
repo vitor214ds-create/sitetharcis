@@ -4,8 +4,8 @@ import { pageHead } from "@/lib/site-seo";
 export const Route = createFileRoute("/")({
   head: () =>
     pageHead(
-      "Tharcis José Leite da Silva — advogado",
-      "Advocacia em Estrela do Norte/SP. Direito do Trabalho, Previdenciário, Civil e do Consumidor. OAB/SP 348.515 e OAB/PR 83.513.",
+      "Advogado Trabalhista Online no Brasil",
+      "Advocacia trabalhista com atendimento on-line em todo o Brasil. Atuação em horas extras, insalubridade, acidentes e doenças ocupacionais. OAB/SP 348.515.",
       "/",
     ),
   component: HomePage,
