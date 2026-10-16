@@ -79,7 +79,7 @@ export function AboutPage() {
               Trabalhista, Previdenciária, Civil e do Consumidor.
             </p>
             <p>
-              O escritório está localizado em Nova Estrela. A atuação parte de uma
+              O escritório está localizado em Estrela do Norte, São Paulo. A atuação parte de uma
               convicção: compreender o contexto de cada pessoa é essencial para construir uma
               orientação jurídica responsável.
             </p>
@@ -418,13 +418,13 @@ export function ContactPage() {
         <div className="container">
           <Eyebrow>O ESCRITÓRIO</Eyebrow>
           <h2>
-            Em Nova Estrela.
+            Em Estrela do Norte.
             <br />
             <em>Perto da sua história.</em>
           </h2>
           <OfficeImage
             file="fachada.webp"
-            label="Fachada do escritório em Nova Estrela"
+            label="Fachada do escritório · Rua José Passador, 565"
             className="facade-photo"
           />
         </div>
@@ -447,7 +447,7 @@ export function PrivacyPage() {
           <p>
             Esta política apresenta informações gerais sobre privacidade, em observância à Lei Geral
             de Proteção de Dados (Lei nº 13.709/2018). O responsável pelos dados recebidos nos
-            canais do escritório é Tharcis José Leite da Silva, com endereço em Nova Estrela.
+            canais do escritório é Tharcis José Leite da Silva, com endereço na Rua José Passador, 565, Nova Estrela, Estrela do Norte/SP, CEP 19230-000.
           </p>
           <h2>1. Informações recebidas</h2>
           <p>
