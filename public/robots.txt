@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://sitetharcis.lovable.app/sitemap.xml
+Sitemap: https://tharcisleiteadvocacia.com.br/sitemap.xml
