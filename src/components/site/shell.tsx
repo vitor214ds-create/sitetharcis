@@ -141,11 +141,9 @@ export function SiteFooter() {
           <Link to="/trabalhadores-rodovias-frigorificos">Rodovias e frigoríficos</Link>
         </div>
         <div>
-          <h3>Estrela do Norte · SP</h3>
+          <h3>Nova Estrela</h3>
           <p>
             {office.address}
-            <br />
-            {office.city}
           </p>
           <a href={office.whatsapp} target="_blank" rel="noopener noreferrer">
             {office.phone} <ArrowUpRight size={13} />
