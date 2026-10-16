@@ -245,8 +245,6 @@ export function HomePage() {
           <div className="office-gallery">
             <OfficeImage file="fachada.webp" label="Fachada do escritório Tharcis Leite Advocacia" />
             <OfficeImage file="IMG_6455.webp" label="Tharcis Leite em atendimento no escritório" />
-            <OfficeImage file="IMG_6496.webp" label="Tharcis Leite com material de estudo jurídico" />
-            <OfficeImage file="IMG_6431.webp" label="Tharcis Leite na recepção do escritório" />
           </div>
           <div className="office-gallery-footer">
             <span>PROXIMIDADE QUE COMEÇA NO ACOLHIMENTO.</span>
