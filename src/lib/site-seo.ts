@@ -8,10 +8,10 @@ export function pageHead(title: string, description: string, path: string) {
       { property: "og:title", content: fullTitle },
       { property: "og:description", content: description },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: `https://sitetharcis.lovable.app${path}` },
+      { property: "og:url", content: `https://tharcisleiteadvocacia.com.br${path}` },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: `https://sitetharcis.lovable.app${path}` }],
+    links: [{ rel: "canonical", href: `https://tharcisleiteadvocacia.com.br${path}` }],
     scripts:
       path === "/"
         ? [
@@ -23,7 +23,7 @@ export function pageHead(title: string, description: string, path: string) {
                 name: office.name,
                 telephone: office.phone,
                 email: office.email,
-                url: "https://sitetharcis.lovable.app",
+                url: "https://tharcisleiteadvocacia.com.br",
                 address: {
                   "@type": "PostalAddress",
                   streetAddress: "Rua José Passador, 565, Vila Estrela",
