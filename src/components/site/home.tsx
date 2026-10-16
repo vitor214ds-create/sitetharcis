@@ -18,7 +18,7 @@ const sectors = [
     id: "rodovias",
     Icon: HardHat,
     number: "02",
-    title: "Rodovias e construção civil pesada",
+    title: "Construção Civil Pesada(Rodovias)",
     text: "Jornadas prolongadas, períodos de descanso, deslocamentos, adicionais legais, segurança e acidentes podem demandar análise do contrato, dos registros e das normas coletivas aplicáveis.",
     link: "/direitos-trabalhadores-rodovias",
     cta: "Conheça a atuação neste setor",
