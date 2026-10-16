@@ -26,10 +26,7 @@ export function pageHead(title: string, description: string, path: string) {
                 url: "https://tharcisleiteadvocacia.com.br",
                 address: {
                   "@type": "PostalAddress",
-                  streetAddress: "Rua José Passador, 565, Vila Estrela",
-                  addressLocality: "Estrela do Norte",
-                  addressRegion: "SP",
-                  postalCode: "19230-000",
+                  addressLocality: "Nova Estrela",
                   addressCountry: "BR",
                 },
               }),
