@@ -2379,3 +2379,7 @@ body { font-size: 17px; }
   .floating-whatsapp-label { display: none; }
   .video-control { left: 20px; right: auto; bottom: 65px; }
 }
+
+/* TZ identity asset: maintain header/footer proportions */
+.brand-symbol-logo { display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.brand-symbol-logo img { display: block; width: 100%; height: 100%; object-fit: contain; }
