@@ -12,8 +12,8 @@ describe("Official office details", () => {
     expect(office.registrations).toEqual(["OAB/SP 348.515", "OAB/PR 83.513"]);
   });
   it("retains the official office location", () => {
-    expect(office.address).toBe("Nova Estrela");
-    expect(office.city).toBe("");
+    expect(office.address).toBe("Rua José Passador, 565 · Nova Estrela");
+    expect(office.city).toBe("Estrela do Norte/SP · CEP 19230-000");
   });
   it("covers every requested public page", () => {
     expect(pagePaths).toEqual([
