@@ -31,9 +31,7 @@ export function SiteHeader() {
     <header className={`site-header ${scrolled || !home || open ? "header-solid" : ""}`}>
       <div className="header-inner">
         <Link to="/" className="brand" aria-label="Tharcis Leite Advocacia — início">
-          <span className="brand-symbol">
-            TL<span>.</span>
-          </span>
+          <span className="brand-symbol brand-symbol-logo"><img src="/media/logo-tz.png" alt="" /></span>
           <span className="brand-name">
             THARCIS LEITE<span>ADVOCACIA</span>
           </span>
@@ -106,9 +104,7 @@ export function SiteFooter() {
       <div className="container footer-grid">
         <div>
           <Link to="/" className="brand footer-brand">
-            <span className="brand-symbol">
-              TL<span>.</span>
-            </span>
+            <span className="brand-symbol brand-symbol-logo"><img src="/media/logo-tz.png" alt="" /></span>
             <span className="brand-name">
               THARCIS LEITE<span>ADVOCACIA</span>
             </span>
