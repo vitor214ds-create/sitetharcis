@@ -135,11 +135,9 @@ export function ContactDetails() {
           <h3>O escritório</h3>
           <p>
             {office.address}
-            <br />
-            {office.city}
           </p>
           <a
-            href="https://www.google.com/maps/search/?api=1&query=Rua+Jos%C3%A9+Passador+565+Estrela+do+Norte+SP"
+            href="https://www.google.com/maps/search/?api=1&query=Nova+Estrela"
             target="_blank"
             rel="noopener noreferrer"
             className="text-link"
